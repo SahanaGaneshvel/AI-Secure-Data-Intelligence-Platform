@@ -28,9 +28,9 @@ test_cases = [
     ("JWT - Incomplete", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9", [], ["JWT Token"]),
 
     # Database URIs
-    ("MongoDB URI", "mongodb://user:password@localhost:27017/database", ["MongoDB URI"], []),
+    ("MongoDB URI", "mongodb://user:EXAMPLE_PASSWORD@localhost:27017/database", ["MongoDB URI"], []),
     ("PostgreSQL URI", "postgresql://user:pass@localhost:5432/db", ["PostgreSQL Connection"], []),
-    ("MySQL URI", "mysql://root:password@localhost:3306/mydb", ["MySQL Connection"], []),
+    ("MySQL URI", "mysql://root:EXAMPLE_PASSWORD@localhost:3306/mydb", ["MySQL Connection"], []),
 
     # SQL Injection
     ("SQL Injection - OR 1=1", "SELECT * FROM users WHERE id=1 OR 1=1", ["SQL Injection"], []),

@@ -109,7 +109,7 @@ Traceback (most recent call last):
   File "/var/www/app/routes/users.py", line 145, in get_user_data
     user = User.query.filter_by(id=user_id).first()
 sqlalchemy.exc.OperationalError: could not connect to server
-2026-03-25 08:30:16 ERROR [Payment] password=user_pass_2026, api_key=sk_live_EXAMPLE_KEY_FOR_TESTING_ONLY
+2026-03-25 08:30:16 ERROR [Payment] password=EXAMPLE_PASS, api_key=sk_live_EXAMPLE_KEY_FOR_TESTING_ONLY
 2026-03-25 08:35:22 INFO [Cache] redis://:cache_password_xyz@cache.internal:6379/0
 2026-03-25 08:40:00 ERROR [DB] SQL Error: You have an error in your SQL syntax near WHERE user_id
 2026-03-25 08:45:10 DEBUG console.log() {user: 'admin', token: 'secret_admin_token_xyz'}

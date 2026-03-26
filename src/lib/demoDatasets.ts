@@ -126,7 +126,7 @@ Traceback (most recent call last):
     return self.limit(1)._execute_and_instances(context).scalar()
 sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server
 2026-03-25 08:30:15 ERROR [Payment] Failed to process payment for user john@company.com with card ending 4532
-2026-03-25 08:30:16 ERROR [Payment] Error details: password=user_pass_2026, api_key=sk_live_EXAMPLE_KEY_FOR_TESTING
+2026-03-25 08:30:16 ERROR [Payment] Error details: password=EXAMPLE_PASS, api_key=sk_live_EXAMPLE_KEY_FOR_TESTING
 2026-03-25 08:35:22 INFO [Cache] Redis connection: redis://:cache_password_xyz@cache.internal:6379/0
 2026-03-25 08:40:00 ERROR [DB] SQL Error:
 mysql_query(): You have an error in your SQL syntax near 'WHERE user_id = '123' at line 1
@@ -151,7 +151,7 @@ Exception: NullPointerException at com.company.api.UserController.getProfile(Use
     highlights: ["Email", "Password in logs", "API key", "Stack trace"],
     content: `2026-03-10 10:00:01 INFO User login
 email=admin@company.com
-password=admin123
+password=EXAMPLE_PASS
 api_key=sk-prod-xyz
 ERROR stack trace: NullPointerException at service.java:45`,
   },
